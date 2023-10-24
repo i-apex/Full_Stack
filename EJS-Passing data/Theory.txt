@@ -1,0 +1,8 @@
+there may be bugs sometimes and we can not pass the data 
+that we want so the .ejs file crashes and to prevent this
+
+preventedb by local variable
+
+for data to pass from user side to the ejs side:
+
+easiest method is using post request

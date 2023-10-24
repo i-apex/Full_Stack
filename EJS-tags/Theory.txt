@@ -1,0 +1,11 @@
+EJS tags:
+    <%= variable  %>   -------- JS output
+    <% console.log("hello")%>   ------JS execute
+    <%-  <h1>Hello</h1> %>     -------Render html
+    <%%    %%>     -----show <% or %>
+    <%#  %>         -----comment
+    <%- include("File name")%>     ----insert another EJS file
+
+
+
+    

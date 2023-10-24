@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sound Append</title>
+    <meta charset="UTF-8" />
+
+    <style>
+        
+
+        #textInput1{
+            background-color: antiquewhite;
+            border: hidden;
+        }
+
+        body{
+            text-align: center;
+        background-color: #283149;
+        }
+        h2,h3,label{
+            font-size: 5rem;
+            color: #DBEDF3;
+            font-family: "Arvo", cursive;
+            text-shadow: 3px 0 #e27fac;
+        }
+
+        #textInput1{
+            height: 30px;
+            width: 500px;
+        }
+        
+        button{
+            font-size: 1.5rem;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-shadow: 3px 0 rgb(0, 217, 255);
+            color: #141213;
+
+        }
+        .button{
+            background-color: #55bad8;
+        }
+    </style>
+  </head>
+
+  <body>
+    <h2>Give all the inputs below🎶:</h2>
+    <label for="textInput1">Give the audio path: </label>
+    <input type="text" id="textInput1" />
+
+    <button type="button" class="button"onclick="getInputValue()">
+      Enter
+    </button>
+
+    <h3>Output:</h3>
+    <p id="output"></p>
+    <div>
+        <button type="button" class="button1"onclick="playMusic()">
+            Play all the files together
+          </button>
+    </div>
+   
+    <script>
+
+      const music = [];
+      var i=0;
+
+      function getInputValue(event) {
+        
+            let inputValue = document.getElementById("textInput1").value;
+            music[i]= new Audio(inputValue);
+            // music[i].play();
+            i++;
+    }
+
+        function playMusic(){
+            for(var k=0;k<music.length;k++){
+                setTimeout(function(){
+                    console.log("timeout");
+                },5000);
+                music[k].play();
+            }
+        }
+
+      
+    </script>
+  </body>
+</html>

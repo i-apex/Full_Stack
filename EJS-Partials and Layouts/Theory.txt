@@ -1,0 +1,6 @@
+styles and other sttatic entities such as imagess need
+to be put in a seperate flder and then specified to be static using
+aap.express(static) method
+
+also for multiple pages having same functionalities,
+we can use ejs templates
