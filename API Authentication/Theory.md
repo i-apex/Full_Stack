@@ -1,9 +1,9 @@
 when making request from a server tha provides services, we need to match a certain key to access the api data 
 
-0.No authentication
-1.basic "
-2.api key authorisation
-3.token based authentication
+0. No authentication
+1. basic "
+2. api key authorisation
+3. token based authentication
 
 rate limit: no of requests of an ip address per unit time is limited
 
