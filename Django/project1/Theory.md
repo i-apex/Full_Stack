@@ -1,0 +1,1 @@
+path ( base_url , computation/rendering using index function , assigning the name as index)
