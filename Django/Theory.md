@@ -28,3 +28,22 @@ static folder : where all the static files such as external css is stored by men
 
 BASE_DIR means the folder that conatains manage.py
 
+dynamic django modules is same as ejs which helps in using the python code in html file while seperating the frontend from backend
+
+django uses sql lite as default db, but it can be changed
+
+to make the changes in mmodel.py work and establish an databse, we need:
+ manage.py makemigrations followed by
+ python manage.py migrate
+
+accessing the admin panel of default django at /admin endpoint using: 
+ manage.py createsuperuser
+
+Each value in the database is an object
+
+Redirect allows to redirect the user on other html page whenever called
+
+On importing the User from django.contrib we can use it's properties and match its attributes thus doing various actions
+
+Dynamic url routing helps in customising the page as per the user
+<str : str_name>

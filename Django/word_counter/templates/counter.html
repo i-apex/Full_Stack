@@ -6,6 +6,8 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>the number of words are {{count}}</h1>
+    {% for post in posts %}
+    <h1><a href="{% url 'post' post%}">Post</a></h1>
+    {% endfor %}
 </body>
 </html>
