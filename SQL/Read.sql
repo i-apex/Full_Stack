@@ -17,4 +17,4 @@ SELECT * from products;
 
 -- or:
 
-SELECT * FROM products where id=1;
+SELECT * FROM products WHERE id=1;
