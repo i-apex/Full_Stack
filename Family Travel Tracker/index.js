@@ -9,7 +9,7 @@ const db = new pg.Client({
   user: "postgres",
   host: "localhost",
   database: "world",
-  password: "123456",
+  password: "1234",
   port: 5432,
 });
 db.connect();
@@ -65,7 +65,24 @@ app.post("/add", async (req, res) => {
     console.log(err);
   }
 });
-app.post("/user", async (req, res) => {});
+// app.post("/user", async (req, res) => {
+//   currentUserId = req.body.name;
+//   currentuserColor = req.body.color;
+//   await db.query("INSERT INTO users(name,color) VALUES($2,$1);", [
+//     currentuserColor,
+//     currentUserId,
+//   ]);
+  
+// });
+
+app.post("/user", async (req, res) => {
+  if (req.body.add === "new") {
+    res.render("new.ejs");
+  } else {
+    currentUserId = req.body.user;
+    res.redirect("/");
+  }
+});
 
 app.post("/new", async (req, res) => {
   //Hint: The RETURNING keyword can return the data that was inserted.
