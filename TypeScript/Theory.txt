@@ -1,0 +1,21 @@
+Ecmascript is a specification and javascripti is an implementation
+
+TypeScript = JavaScript + Type Schecking + More Features + Code Completion + 
+
+tsc : TypeScript compiler
+
+launch.json : the file that will help in debugging - configuration for helping vscode in debugging the application
+tasks.json : needed to specify the tasks for prelaunch in the launch.json
+
+
+noUnusedParams : to see if the params of a function are read
+
+in javascript - the parameters while calling could be any number, but in TypeScript, it should match with the function definition
+
+objects - typescript has strong 
+readonly - to prevent write
+
+we can make the choice between two data types while accepting - union
+intersection - used for more real life and complex object types than for primitive ones
+
+also possible for literal types - intersection and union
